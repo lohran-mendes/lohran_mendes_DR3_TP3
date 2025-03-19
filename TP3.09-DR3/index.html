@@ -5,8 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DR3_TP3</title>
     <script src="./script.js" defer></script>
+    <style>
+      body {
+        user-select: none;
+      }
+      div {
+        height: 100px;
+        width: 200px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        background-color: rgba(113, 241, 199, 0.822);
+        border: 3px dotted rgba(0, 0, 0, 0.425);
+        padding: 20px;
+      }
+    </style>
   </head>
   <body style="background-color: rgba(182, 126, 21, 0.61)">
     <h1>DR3_TP3</h1>
+    <!-- // Crie um arquivo HTML que permita arrastar um texto que está em um elemento "p" para uma área de texto criada por você, que pode ser uma <div> que apenas possua demarcação visual mostrando sua área (um retângulo com bordas pontilhadas, por exemplo). Faça com que o usuário possa arrastar o texto pela tela, quando o texto for solto na área, ele deve ser inserido na área de texto. -->
+
+    <p draggable="true">texto a ser movido</p>
+    <div></div>
   </body>
 </html>

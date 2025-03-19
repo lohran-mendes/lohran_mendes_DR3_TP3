@@ -5,8 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DR3_TP3</title>
     <script src="./script.js" defer></script>
+    <style>
+      #arrastavel {
+        text-align: center;
+        background: white;
+      }
+
+      .zonaArrastavel {
+        width: 200px;
+        height: 20px;
+        background: blueviolet;
+        margin: 10px;
+        padding: 10px;
+      }
+
+      .zonaArrastavel.arrastaEmCima {
+        background-color: purple;
+      }
+
+      .arrastando {
+        opacity: 0.5;
+      }
+    </style>
   </head>
   <body style="background-color: rgba(182, 126, 21, 0.61)">
     <h1>DR3_TP3</h1>
+    <div class="zonaArrastavel" id="zonaInicial">
+      <img
+        src="./img/div.png"
+        alt=""
+        id="arrastavel"
+        draggable="true"
+        height="18"
+        style="cursor: pointer"
+      />
+    </div>
+    <div class="zonaArrastavel" id="zonaFinal"></div>
   </body>
 </html>

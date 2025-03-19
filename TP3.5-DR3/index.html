@@ -5,8 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DR3_TP3</title>
     <script src="./script.js" defer></script>
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        && div label {
+          display: inline-block;
+          width: 6ch;
+        }
+        && button {
+          max-width: 100px;
+        }
+      }
+    </style>
   </head>
   <body style="background-color: rgba(182, 126, 21, 0.61)">
     <h1>DR3_TP3</h1>
+    <form action="">
+      <div>
+        <label for="nome">nome:</label>
+        <input type="text" id="nome" />
+      </div>
+      <div>
+        <label for="email">e-mail: </label>
+        <input type="email" id="email" />
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
   </body>
 </html>

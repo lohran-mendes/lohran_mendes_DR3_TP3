@@ -9,3 +9,11 @@
 // Não faça as alterações manualmente no arquivo index.html.
 // Utilize o DOM para resolver o exercício.
 // Utilize o `textContent`, para alterar o `conteúdo` do elemento <span>.
+const input = document.querySelector("#texto");
+const nome = document.querySelector("#nome");
+input.addEventListener("keydown", (event) => {
+  if (event.code === "Enter") {
+    nome.textContent = input.value;
+    input.value = "";
+  }
+});

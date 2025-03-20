@@ -5,8 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DR3_TP3</title>
     <script src="./script.js" defer></script>
+    <style>
+      form {
+        background-color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        max-width: 500px;
+        margin: 0 auto;
+        text-align: center;
+        border: solid black 1px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        && h2 {
+          margin: 15px 0px 0px 0px;
+        }
+      }
+      .divDeTermos {
+        display: flex;
+        flex-direction: column;
+        max-width: max-content;
+        text-align: start;
+      }
+      button {
+        height: 25px;
+        /* max-width: 200px; */
+      }
+    </style>
   </head>
   <body style="background-color: rgba(182, 126, 21, 0.61)">
     <h1>DR3_TP3</h1>
+    <!-- // Crie no arquivo html um formulário e nele crie um título e um parágrafo, simulando um campo obrigatório que deve ser lido e aceito. Para isso, crie um campo de “checkbox”, um botão e faça com que esse form só seja enviado se o usuário marcar o checkbox, aceitando assim os “termos e condições”. Mostre um alerta ao usuário se puder ou não enviar o form. -->
+
+    <form action="">
+      <h2>Termos de Condições</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus non
+        aliquam, illum consequatur aspernatur asperiores velit culpa molestiae
+        veniam dicta eaque rem numquam beatae amet optio facere qui facilis. Ab?
+        Ipsam minus perspiciatis quibusdam in adipisci. Sit odio veniam quisquam
+        autem quae, qui magnam voluptatum quo tempore minus facilis consequatur
+        aliquid! Eos blanditiis distinctio aspernatur quam autem consequatur,
+        facere eveniet? Eos consequatur non ipsam necessitatibus iusto minima
+        doloremque incidunt magnam quod quae architecto dolores at, iure
+        officiis vero, libero earum vel consectetur et placeat. Corrupti,
+        molestias. Necessitatibus ea ipsam corrupti. Aspernatur vitae sed
+        similique animi recusandae beatae tempore facere, nulla saepe itaque aut
+        error atque? Repellendus, quis. Architecto, maxime nulla quisquam eum
+        reprehenderit corrupti suscipit fugit, doloremque cumque sapiente
+        repudiandae! Unde aliquam sunt itaque aliquid alias eius repellat culpa
+        perferendis animi quo, ut vel, obcaecati cupiditate eum, accusamus
+        voluptatibus ipsa? Minus adipisci pariatur quos perferendis nesciunt!
+      </p>
+      <div class="divDeTermos">
+        <label for="termoLido">
+          <input type="checkbox" name="termo" id="termoLido" />
+          Li as condições do termo
+        </label>
+        <label for="termoAceito">
+          <input type="checkbox" name="termo" id="termoAceito" />
+          Aceito as condições do termo
+        </label>
+      </div>
+      <button type="submit">Aceitar</button>
+    </form>
   </body>
 </html>

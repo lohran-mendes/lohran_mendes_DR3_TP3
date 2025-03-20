@@ -13,3 +13,17 @@
 // Utilize o DOM para resolver o exercício.
 // Utilize o “innerText”, para alterar o `conteúdo` do elemento <span>.
 // Assim que terminar, salve todos os links para os exercícios realizados em PDF nomeando o arquivo conforme a regra “nome_sobrenome_DR3_TP3.PDF” e poste como resposta a este TP.
+
+const lista = document.querySelector("#lista");
+
+lista.addEventListener("click", () => {
+  const lis = document.querySelectorAll("li");
+  const acre = Array.from(lis).filter(
+    (li) => li.innerText.toLowerCase() === "acre"
+  );
+  acre.forEach((resultado) => {
+    resultado.innerText = "Amapá";
+    resultado.style.width = "min-content";
+    resultado.style.backgroundColor = "rgba(10, 211, 194, 0.493)";
+  });
+});

@@ -10,3 +10,8 @@
 // Não faça as alterações manualmente no arquivo index.html.
 // Utilize o DOM para resolver o exercício.
 // Utilize o `textContent`, para alterar o `conteúdo` do elemento <span>.
+
+const container = document.querySelector("#container");
+const span = document.querySelector("span");
+
+container.addEventListener("click", () => (span.textContent = "teste"));

@@ -5,8 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DR3_TP3</title>
     <script src="./script.js" defer></script>
+    <style>
+      .caixinha {
+        background-color: red;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+      }
+      .container {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: blue;
+        width: 150px;
+        height: 150px;
+      }
+      #container {
+        display: flex;
+        gap: 20px;
+      }
+    </style>
   </head>
   <body style="background-color: rgba(182, 126, 21, 0.61)">
     <h1>DR3_TP3</h1>
+    <div id="container">
+      <div class="caixinha" draggable="true"></div>
+      <div class="container"></div>
+      <div class="container"></div>
+      <div class="container"></div>
+      <div class="container"></div>
+      <div class="container"></div>
+      <div class="container"></div>
+    </div>
   </body>
 </html>

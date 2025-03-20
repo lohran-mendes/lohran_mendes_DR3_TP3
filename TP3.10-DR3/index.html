@@ -5,8 +5,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DR3_TP3</title>
     <script src="./script.js" defer></script>
+    <style>
+      .grupo-de-respostas {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+      fieldset {
+        margin-bottom: 40px;
+        border: black solid 1px;
+        && legend {
+          font-size: 1.125rem;
+        }
+      }
+      button {
+        font-size: 1.25rem;
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body style="background-color: rgba(182, 126, 21, 0.61)">
     <h1>DR3_TP3</h1>
+    <form action="">
+      <fieldset>
+        <legend>
+          1. Qual foi o primeiro produto explorado economicamente pelos
+          portugueses no Brasil?
+        </legend>
+        <div class="grupo-de-respostas">
+          <div>
+            <label for="q1r1"
+              ><input type="radio" name="primeiraQuestao" value="A" id="q1r1" />
+              Café</label
+            >
+          </div>
+          <div>
+            <label for="q1r2"
+              ><input type="radio" value="B" name="primeiraQuestao" id="q1r2" />
+              Cana-de-açucar</label
+            >
+          </div>
+          <div>
+            <label for="q1r3"
+              ><input type="radio" value="C" name="primeiraQuestao" id="q1r3" />
+              Pau-brasil</label
+            >
+          </div>
+          <div>
+            <label for="q1r4"
+              ><input type="radio" value="D" name="primeiraQuestao" id="q1r4" />
+              Ouro</label
+            >
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>
+          2. Qual evento marcou o fim do período monárquico no Brasil?
+        </legend>
+        <div class="grupo-de-respostas">
+          <div>
+            <label for="q2r1"
+              ><input type="radio" name="segundaQuestao" value="A" id="q2r1" />
+              Independência do Brasil</label
+            >
+          </div>
+          <div>
+            <label for="q2r2"
+              ><input type="radio" value="B" name="segundaQuestao" id="q2r2" />
+              Proclamação da República</label
+            >
+          </div>
+          <div>
+            <label for="q2r3"
+              ><input type="radio" value="C" name="segundaQuestao" id="q2r3" />
+              Revolução de 1930</label
+            >
+          </div>
+          <div>
+            <label for="q2r4"
+              ><input type="radio" value="D" name="segundaQuestao" id="q2r4" />
+              Abolição da escravatura</label
+            >
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>
+          3. Qual destes movimentos sociais ocorreu no século XIX e foi uma
+          revolta de escravizados no Brasil?
+        </legend>
+        <div class="grupo-de-respostas">
+          <div>
+            <label for="q3r1"
+              ><input type="radio" value="A" name="terceiraQuestao" id="q3r1" />
+              Revolta da Vacina</label
+            >
+          </div>
+          <div>
+            <label for="q3r2"
+              ><input type="radio" value="B" name="terceiraQuestao" id="q3r2" />
+              Balaiada</label
+            >
+          </div>
+          <div>
+            <label for="q3r3"
+              ><input type="radio" value="C" name="terceiraQuestao" id="q3r3" />
+              Revolta dos Malês</label
+            >
+          </div>
+          <div>
+            <label for="q3r4"
+              ><input type="radio" value="D" name="terceiraQuestao" id="q3r4" />
+              Inconfidência Mineira</label
+            >
+          </div>
+        </div>
+      </fieldset>
+      <button type="submit">Enviar respostas</button>
+    </form>
   </body>
 </html>
